@@ -13,7 +13,7 @@ if (
 
     session_destroy();
 
-    header("Location: ../login/index.php?session=expired");
+    header("Location: /login/index.php?session=expired");
     exit;
 }
 
@@ -32,7 +32,7 @@ function punyaAkses(array $levelDiizinkan): bool
 function wajibLevel(array $levelDiizinkan): void
 {
     if (!punyaAkses($levelDiizinkan)) {
-        header("Location: ../dashboard/index.php?akses=ditolak");
+        header("Location: /dashboard/index.php?akses=ditolak");
         exit;
     }
 }
