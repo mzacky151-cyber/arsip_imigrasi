@@ -1,10 +1,10 @@
 <?php
 
-$host = getenv("MYSQLHOST");
-$user = getenv("MYSQLUSER");
-$pass = getenv("MYSQLPASSWORD");
-$db   = getenv("MYSQLDATABASE");
-$port = getenv("MYSQLPORT");
+$host = "mysql.railway.internal";
+$user = "root";
+$pass = "bkOKHujYKUtadHxHOREYDzCoclQRjcRE";
+$db = "railway";
+$port = 3306;
 
 $koneksi = mysqli_connect(
     $host,
@@ -15,7 +15,7 @@ $koneksi = mysqli_connect(
 );
 
 if (!$koneksi) {
-    die("Terjadi gangguan koneksi database.");
+    die("Koneksi database gagal: " . mysqli_connect_error());
 }
 
 mysqli_set_charset($koneksi, "utf8mb4");
