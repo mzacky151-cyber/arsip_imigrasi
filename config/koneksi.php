@@ -1,11 +1,12 @@
 <?php
 
-$host = "localhost";
+$host = "mysql.railway.internal";
 $user = "root";
-$pass = "";
-$db   = "db_arsip_imigrasi";
+$pass = "bkOKHujYKUtadHxHOREYDzCoclQRjcRE";
+$db   = "railway";
+$port = "3306";
 
-$koneksi = mysqli_connect($host, $user, $pass, $db);
+$koneksi = mysqli_connect($host, $user, $pass, $db, $port);
 
 if (!$koneksi) {
     die("Terjadi gangguan koneksi database.");
