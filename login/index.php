@@ -6,7 +6,7 @@ if (
     isset($_SESSION["login"]) &&
     $_SESSION["login"] === true
 ) {
-    header("Location: ../dashboard/index.php");
+    header("Location: /dashboard/index.php");
     exit;
 }
 ?>
@@ -34,9 +34,9 @@ if (
     <!-- Logo -->
     <div class="logo-group">
 
-        <img src="../assets/img/logo-imigrasi.png" class="logo">
+        <img src="/assets/img/logo-imigrasi.png" class="logo">
 
-        <img src="../assets/img/logo-jember.png" class="logo">
+        <img src="/assets/img/logo-jember.png" class="logo">
 
     </div>
 
