@@ -16,7 +16,7 @@ $versiCss = file_exists($lokasiCss)
 
 <link
     rel="stylesheet"
-    href="/ARSIP_IMIGRASI/assets/css/style.css?v=<?= $versiCss; ?>">
+    href="/assets/css/style.css?v=<?= $versiCss; ?>">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
