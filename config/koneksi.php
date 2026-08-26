@@ -1,12 +1,18 @@
 <?php
 
-$host = "mysql.railway.internal";
-$user = "root";
-$pass = "bkOKHujYKUtadHxHOREYDzCoclQRjcRE";
-$db   = "railway";
-$port = "3306";
+$host = getenv("MYSQLHOST");
+$user = getenv("MYSQLUSER");
+$pass = getenv("MYSQLPASSWORD");
+$db   = getenv("MYSQLDATABASE");
+$port = getenv("MYSQLPORT");
 
-$koneksi = mysqli_connect($host, $user, $pass, $db, $port);
+$koneksi = mysqli_connect(
+    $host,
+    $user,
+    $pass,
+    $db,
+    $port
+);
 
 if (!$koneksi) {
     die("Terjadi gangguan koneksi database.");
